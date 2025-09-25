@@ -94,7 +94,7 @@ count++;
 
 
  //pattern 7
-  int a =65;
+  /*int a =65;//ascii value of A//
  
  for (int i=1;i<=3;i++){
 char c=a;
@@ -103,6 +103,21 @@ for(int j=1;j<=3;j++){
 }
 a++;
 cout<<'\n';
- }
+ }*/
 
+
+
+ //pattern 8
+ //ascii value of A//
+ 
+ for (int i=1;i<=3;i++){
+int a =65;
+
+for(int j=1;j<=3;j++){
+    char c=a;
+    cout<<c;
+    a++;
 }
+
+cout<<'\n';
+}}
