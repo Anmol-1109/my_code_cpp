@@ -14,7 +14,7 @@ cout<<sum;}*/
 
 
 
-//       patern 1 //
+//       patern 1 
 /*int n;
 int m;
 cout<<"enter rows";
@@ -34,7 +34,7 @@ while(i<=n){
 
 
 
-//                 patern 2//
+//                 patern 2
 /*int rows=4;
 int columns=4;
 for(int i=1;i<=rows;i++){
@@ -45,7 +45,7 @@ for(int i=1;i<=rows;i++){
 
 
 
-//pattern 3
+//        pattern 3
 /*int rows=3;
 int columns=3;
 for(int j=1;j<=9;j++){
@@ -57,7 +57,7 @@ for(int j=1;j<=9;j++){
 
 
 
-//pattern 4
+//           pattern 4
 /*for(int i=1;i<=10;i++){
     for(int j=1;j<=i;j++){
         cout<<"* ";
@@ -67,7 +67,7 @@ for(int j=1;j<=9;j++){
 
 
 
- //pattern 5 
+ //           pattern 5 
  /*int count=0;
  for(int i=1;i<=4;i++){
      for(int j=i;j<=i+count;j++){
@@ -82,7 +82,7 @@ count++;
 
 
 
- //pattern 6
+ //               pattern 6
  /*for (int i=1;i<=5;i++){
     for(int j=i;j>0;j--){
         cout<<j<<" ";
@@ -93,7 +93,7 @@ count++;
 
 
 
- //pattern 7
+ //              pattern 7
   /*int a =65;//ascii value of A//
  
  for (int i=1;i<=3;i++){
@@ -107,10 +107,10 @@ cout<<'\n';
 
 
 
- //pattern 8
+ //         pattern 8
  //ascii value of A//
  
- for (int i=1;i<=3;i++){
+ /*for (int i=1;i<=3;i++){
 int a =65;
 
 for(int j=1;j<=3;j++){
@@ -120,4 +120,24 @@ for(int j=1;j<=3;j++){
 }
 
 cout<<'\n';
-}}
+}*/
+
+
+
+
+
+//              pattern 9
+int a =65;
+for (int i=1;i<=3;i++){
+
+
+for(int j=1;j<=3;j++){
+    char c=a;
+    cout<<c;
+    a++;
+}
+
+cout<<'\n';
+}
+
+}
