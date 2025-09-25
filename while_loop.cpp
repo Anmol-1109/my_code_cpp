@@ -46,11 +46,21 @@ for(int i=1;i<=rows;i++){
 
 
 //pattern 3
-int rows=3;
+/*int rows=3;
 int columns=3;
 for(int j=1;j<=9;j++){
         cout<<j;
     if(j%3==0){
     cout<<"\n";}
 
+}}*/
+
+
+
+//pattern 4
+for(int i=1;i<=9;i++){
+    for(int j=1;j<=i;j++){
+        cout<<i<<" ";
+    }
+    cout<<"\n";
 }}
