@@ -143,7 +143,7 @@ cout<<'\n';
 
 
 //patter 10
-int a =65;
+/*int a =65;
 for(int i=1;i<=3;i++){
 for(int j=1;j<=3;j++){
     char b=a;
@@ -153,6 +153,37 @@ for(int j=1;j<=3;j++){
 }
 cout<<'\n';
 a=a-2;
+}*/
+
+
+
+
+
+//pattern 11
+/*int a=65;
+
+for (int i=1;i<=3;i++){
+    char b=a;
+    for(int j=1;j<=i;j++){
+        cout<<b<<" ";
+    }
+    a++;
+    cout<<"\n";
+}*/
+
+
+
+
+//pattern 12
+for(int i=1;i<=10;i++){
+    for(int j=10;j>i;j--){
+        cout<<" ";
+    }
+    for(int f=1;f<=i;f++){
+        cout<<"*";
+       
+    } cout<<"\n";
+
 }
 
 }
