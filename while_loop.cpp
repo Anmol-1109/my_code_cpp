@@ -127,10 +127,8 @@ cout<<'\n';
 
 
 //              pattern 9
-int a =65;
+/*int a =65;
 for (int i=1;i<=3;i++){
-
-
 for(int j=1;j<=3;j++){
     char c=a;
     cout<<c;
@@ -138,6 +136,23 @@ for(int j=1;j<=3;j++){
 }
 
 cout<<'\n';
+}*/
+
+
+
+
+
+//patter 10
+int a =65;
+for(int i=1;i<=3;i++){
+for(int j=1;j<=3;j++){
+    char b=a;
+    cout<<b<<" ";
+    a=a+1;
+
+}
+cout<<'\n';
+a=a-2;
 }
 
 }
