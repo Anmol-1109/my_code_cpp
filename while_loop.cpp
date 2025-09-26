@@ -175,7 +175,7 @@ for (int i=1;i<=3;i++){
 
 
 //pattern 12
-for(int i=1;i<=10;i++){
+/*for(int i=1;i<=10;i++){
     for(int j=10;j>i;j--){
         cout<<" ";
     }
@@ -184,6 +184,24 @@ for(int i=1;i<=10;i++){
        
     } cout<<"\n";
 
-}
+}*/
 
-}
+
+
+
+
+//    pattern 13
+
+for(int i=1;i<=4;i++){
+     for(int j=1;j<=4-i;j++){
+        cout<<" ";}
+     for(int h=1;h<i;h++){
+            cout<<h;
+        }
+    for(int l=i;l>0;l--){
+        cout<<l;
+    }    
+
+     cout<<'\n';
+    }    }
+   
