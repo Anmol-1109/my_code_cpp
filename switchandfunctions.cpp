@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
+int power(int a,int b){
+    int j=1;
+    int n=1;
+    while(j<=b){
+        n=n*a;
+        j++;
+    }
+    return n;
+}
 int main(){
+    /*
     int n;
     cout<<"enter the no ";
     cin>>n;
@@ -20,5 +30,7 @@ int main(){
     default:
     cout<<"enter a valid no";
 
-}
+}*/
+int l=power(2,5);
+cout<<l;
 }
