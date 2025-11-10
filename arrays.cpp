@@ -1,4 +1,5 @@
 #include <iostream>
+#include<vector>
 using namespace std;
 void print( int array[],int size){
      for (int i=0;i <size;i++){
@@ -13,4 +14,5 @@ int main(){
    int size = sizeof(array)/sizeof(array[0]);
     //print(array,size);
     print(array2,4);
+    vector<int>a(10,6);
 } 
