@@ -1,5 +1,6 @@
 
 #include<iostream>
+#include <math.h>
 using namespace std;
 int pivot(int arr[],int size){
 int s=0;
@@ -60,8 +61,45 @@ if(arr[s]==k){
 else{
     return -1;
 }}
+int sq(int n){
+    int arr[n];
+   int size=sizeof(arr)/sizeof(int);
+   for(int i=0;i<n;i++){
+    arr[i]=i;
+   }
+  
+int s=0;
+int e=n-1;
+int m=s+(e-s)/2;
+int sq;
+while(s<=e){
+     m=s+(e-s)/2;
+     sq=arr[m]*arr[m];
+    if(sq>n){
+        e=m-1;
+    }
+    else if(sq==n){
+        return m;
+    }
+    else{
+        s=m+1;
+    }
+
+}
+
+return s-1;
+}
+
 int main(){
-    int arr[]={7,8,9,1,2,3,4,5};
-    int size=sizeof(arr)/sizeof(int);
-    cout<<searchp(arr,size,7);
+    //int arr[]={7,8,9,1,2,3,4,5};
+    
+   // cout<<searchp(arr,size,7);
+   
+   int n;
+   cout<<"enter no ";
+   cin>>n;
+   cout<<sqrt(n)<<endl;
+   //sqrt using binary search
+   cout<<sq(n);
+   
 }
