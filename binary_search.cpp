@@ -14,9 +14,6 @@ while(s<e){
         }}
         return s;
     
-
-
-
 }
 
 int main(){
