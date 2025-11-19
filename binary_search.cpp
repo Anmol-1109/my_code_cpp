@@ -27,20 +27,23 @@ int searchp(int arr[],int size,int k){
    int mid=s+(e-s)/2;
    int p=pivot(arr,size);
    
-    if(k>=arr[p]&&(k<=arr[size-1])){
+    if(k>arr[p]&&(k<=arr[size-1])){
         s=p;
-    while(s<e){
+    while(s<=e){
     mid=s+(e-s)/2;
                 if(arr[mid]>=k){
                     e=mid;
                 }
             else{
                 s=mid+1;
-            } }
+            } 
+if(arr[s]==k){
+    return s;
+}}
 }
 if(k>arr[0]){
     e=p-1;
-    while(s<e){
+    while(s<=e){
     mid=s+(e-s)/2;
     if(arr[mid]>=k){
 e=mid;
@@ -49,8 +52,8 @@ e=mid;
         s=mid+1;
     }
 
-    }
-}
+    }}
+
 if(arr[s]==k){
     return s;
 }
@@ -60,5 +63,5 @@ else{
 int main(){
     int arr[]={7,8,9,1,2,3,4,5};
     int size=sizeof(arr)/sizeof(int);
-    cout<<searchp(arr,size,6);
+    cout<<searchp(arr,size,7);
 }
