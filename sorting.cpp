@@ -35,11 +35,28 @@ void bubblesort(int arr[],int n){
      }}
 
 }
+void insertionsort(int arr[],int n){
+    for(int i=1;i<n;i++){
+        int temp =arr[i];
+        int j;
+        for(j=i-1;j>=0;j--){
+            if(arr[j]>temp){
+                arr[j+1]=arr[j];
+
+            }
+            else{
+                
+                break;
+            }
+        }
+arr[j+1]=temp;
+    }
+}
 int main(){
    int  arr[]={2,6,4,5,6,87,98,5,5,0};
     int n= sizeof(arr)/sizeof(int);
     print(arr,n);
-    bubblesort(arr,n);
+    insertionsort(arr,n);
     print(arr,n);
 
 }
