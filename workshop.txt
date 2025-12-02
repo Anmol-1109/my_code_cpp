@@ -1,0 +1,10 @@
+phishing
+spoofing
+malware
+denielof service
+code injection
+iot based
+dns tunneling
+identity based 
+
+
