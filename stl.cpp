@@ -2,6 +2,7 @@
 #include <array>
 #include <vector>
 #include <deque>
+#include <list>
 using namespace std;
 //array
 int main(){
@@ -18,6 +19,11 @@ int main(){
 // cout<<"is a empty--->"<<a.empty()<<"\n";
 // cout<<a.front()<<"\n";
 // cout<<a.back()<<"\n";
+
+
+
+
+
 
 
 
@@ -62,35 +68,61 @@ int main(){
     
 
 //doube ended que or deck or deque
-deque<int>a;
-a.push_front(2);
-a.push_back(1);
-for(int i :a){
-    cout <<i<< " ";
+// deque<int>a;
+// a.push_front(2);
+// a.push_back(1);
+// for(int i :a){
+//     cout <<i<< " ";
 
-}
-a.pop_front();
-cout<<"\nafter front pop\n";
-for(int i :a){
-    cout <<i<< " ";
+// }
+// a.pop_front();
+// cout<<"\nafter front pop\n";
+// for(int i :a){
+//     cout <<i<< " ";
 
-}
-for(int i=1;i<11;i++){
-    a.push_back(i);
+// }
+// for(int i=1;i<11;i++){
+//     a.push_back(i);
 
-}
-cout<<"\nafter loop\n";
-for(int i :a){
-    cout <<i<< " ";
+// }
+// cout<<"\nafter loop\n";
+// for(int i :a){
+//     cout <<i<< " ";
 
-}
-cout<<"\nis a empty ---->"<<a.empty();
-a.erase(a.begin(),a.end()-4);
-cout<<"\nafter erase\n";
-for(int i :a){
-    cout <<i<< " ";
+// }
+// cout<<"\nis a empty ---->"<<a.empty();
+// a.erase(a.begin(),a.end()-4);
+// cout<<"\nafter erase\n";
+// for(int i :a){
+//     cout <<i<< " ";
 
-}
+// }   
+
+
+
+
+
+
+
+
+
+//list
+list<int>l;
+l.push_back(1);
+l.push_front(3);
+list<int>ll(5,100);
+for(int i :l){
+cout<<i<<" ";
+};
+cout<<endl;
+for(int i :ll){
+cout<<i<<" ";
+};
+cout<<endl;
+cout<<l.size()<<endl;
+cout<<ll.size()<<endl;
+
+
 
 
 
