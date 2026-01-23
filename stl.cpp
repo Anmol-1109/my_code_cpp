@@ -3,6 +3,7 @@
 #include <vector>
 #include <deque>
 #include <list>
+#include <stack>
 using namespace std;
 //array
 int main(){
@@ -107,20 +108,41 @@ int main(){
 
 
 //list
-list<int>l;
-l.push_back(1);
-l.push_front(3);
-list<int>ll(5,100);
-for(int i :l){
-cout<<i<<" ";
-};
-cout<<endl;
-for(int i :ll){
-cout<<i<<" ";
-};
-cout<<endl;
-cout<<l.size()<<endl;
-cout<<ll.size()<<endl;
+// list<int>l;
+// l.push_back(1);
+// l.push_front(3);
+// list<int>ll(5,100);
+// for(int i :l){
+// cout<<i<<" ";
+// };
+// cout<<endl;
+// for(int i :ll){
+// cout<<i<<" ";
+// };
+// cout<<endl;
+// cout<<l.size()<<endl;
+// cout<<ll.size()<<endl;
+
+
+
+
+
+
+//stack
+stack<string>s;
+s.push("anmol");
+s.push("sharma");
+s.push("from");
+s.push("meerut");
+cout<<s.top();cout<<endl;
+cout<<s.size();cout<<endl;
+s.pop();
+cout<<s.top();cout<<endl;
+cout<<s.size();cout<<endl;
+cout<<s.empty();
+
+
+
 
 
 
