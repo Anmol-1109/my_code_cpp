@@ -4,6 +4,8 @@
 #include <deque>
 #include <list>
 #include <stack>
+#include <queue>
+
 using namespace std;
 //array
 int main(){
@@ -129,17 +131,35 @@ int main(){
 
 
 //stack
-stack<string>s;
+// stack<string>s;
+// s.push("anmol");
+// s.push("sharma");
+// s.push("from");
+// s.push("meerut");
+// cout<<s.top();cout<<endl;
+// cout<<s.size();cout<<endl;
+// s.pop();
+// cout<<s.top();cout<<endl;
+// cout<<s.size();cout<<endl;
+// cout<<s.empty();
+
+
+
+
+
+//queue
+queue<string>s;
 s.push("anmol");
 s.push("sharma");
 s.push("from");
 s.push("meerut");
-cout<<s.top();cout<<endl;
-cout<<s.size();cout<<endl;
+cout<<s.front()<<endl;
+cout<<s.size()<<endl;
 s.pop();
-cout<<s.top();cout<<endl;
-cout<<s.size();cout<<endl;
-cout<<s.empty();
+cout<<s.front()<<endl;;
+cout<<s.size()<<endl;;
+
+
 
 
 
