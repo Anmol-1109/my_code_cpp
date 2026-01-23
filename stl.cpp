@@ -6,6 +6,7 @@
 #include <stack>
 #include <queue>
 #include <set>
+#include <map>
 using namespace std;
 //array
 int main(){
@@ -191,44 +192,62 @@ int main(){
 
 
 
-//set 
-set<int>s;
-s.insert(1);
-s.insert(5);
-s.insert(3);
-s.insert(4);
-s.insert(3);
-s.insert(6);
-s.insert(6);
-s.insert(6);
-s.insert(6);
-cout<<s.size()<<endl;
-for(int i : s){
-    cout<<i<<" ";
+// //set 
+// set<int>s;
+// s.insert(1);
+// s.insert(5);
+// s.insert(3);
+// s.insert(4);
+// s.insert(3);
+// s.insert(6);
+// s.insert(6);
+// s.insert(6);
+// s.insert(6);
+// cout<<s.size()<<endl;
+// for(int i : s){
+//     cout<<i<<" ";
+// }
+// set<int>::iterator it=s.begin();
+// it++;
+// s.erase(it);
+// cout<<endl;
+// for(int i : s){
+//     cout<<i<<" ";
+// }
+// set<int>:: iterator itr=s.find(5);
+// cout<<endl<<s.count(5)<<endl;
+// cout<<*itr<<endl;
+// for(auto it =itr;it!=s.end();it++){
+//     cout<<*it;
+
+// }
+
+
+
+
+
+
+//map
+
+map<int,string>m;
+m[1]="anmol";
+m[2]="sharma";
+m[6]="from";
+m[18]="meerut";
+m.insert({5,"(021)"});
+for(auto i :m){
+    cout<<i.first<<" " <<i.second<<endl;
 }
-set<int>::iterator it=s.begin();
-it++;
-s.erase(it);
-cout<<endl;
-for(int i : s){
-    cout<<i<<" ";
+cout<<"is there 18   "<<m.count(18);
+cout<<"before erase"<<endl;
+for(auto i :m){
+    cout<<i.first<<" " <<i.second<<endl;
 }
-set<int>:: iterator itr=s.find(5);
-cout<<endl<<s.count(5)<<endl;
-cout<<*itr<<endl;
-for(auto it =itr;it!=s.end();it++){
-    cout<<*it;
-
+m.erase(5);
+cout<<"after erase"<<endl;
+for(auto i :m){
+    cout<<i.first<<" " <<i.second<<endl;
 }
-
-
-
-
-
-
-
-
-
-
-
+auto it =m.find(6);
+cout<<(*it).first<<(*it).second;
 }
