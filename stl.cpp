@@ -5,7 +5,7 @@
 #include <list>
 #include <stack>
 #include <queue>
-
+#include <set>
 using namespace std;
 //array
 int main(){
@@ -148,18 +148,78 @@ int main(){
 
 
 //queue
-queue<string>s;
-s.push("anmol");
-s.push("sharma");
-s.push("from");
-s.push("meerut");
-cout<<s.front()<<endl;
+// queue<string>s;
+// s.push("anmol");
+// s.push("sharma");
+// s.push("from");
+// s.push("meerut");
+// cout<<s.front()<<endl;
+// cout<<s.size()<<endl;
+// s.pop();
+// cout<<s.front()<<endl;;
+// cout<<s.size()<<endl;;
+
+
+
+
+//priority queue
+
+// priority_queue<int>maxi;
+// priority_queue<int,vector<int>,greater<int>>mini;
+// maxi.push(6);
+// maxi.push(9);
+// maxi.push(1);
+// maxi.push(0);
+// int n = maxi.size();
+// for(int i=0;i<n;i++){
+// cout<<maxi.top()<<" ";;
+// maxi.pop();
+// }
+// cout<<endl;
+// mini.push(6);
+// mini.push(9);
+// mini.push(1);
+// mini.push(0);
+
+// for(int i=0;i<n;i++){
+// cout<<mini.top()<<" ";;
+// mini.pop();
+// }
+
+
+
+
+
+
+//set 
+set<int>s;
+s.insert(1);
+s.insert(5);
+s.insert(3);
+s.insert(4);
+s.insert(3);
+s.insert(6);
+s.insert(6);
+s.insert(6);
+s.insert(6);
 cout<<s.size()<<endl;
-s.pop();
-cout<<s.front()<<endl;;
-cout<<s.size()<<endl;;
+for(int i : s){
+    cout<<i<<" ";
+}
+set<int>::iterator it=s.begin();
+it++;
+s.erase(it);
+cout<<endl;
+for(int i : s){
+    cout<<i<<" ";
+}
+set<int>:: iterator itr=s.find(5);
+cout<<endl<<s.count(5)<<endl;
+cout<<*itr<<endl;
+for(auto it =itr;it!=s.end();it++){
+    cout<<*it;
 
-
+}
 
 
 
