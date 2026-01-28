@@ -18,16 +18,19 @@ void rev(char arr[]){
 }   
 
 int main(){
-    char name[50];
-    cout<<"enter your name ";
-    // cin >>name;
-    fgets(name,50,stdin);
-    cout<<"your name is "<<name;
-    // cout<<len(name);
-    // name[4]='\0';
+    // char name[50];
+    // cout<<"enter your name ";
+    // // cin >>name;
+    // fgets(name,50,stdin);
     // cout<<"your name is "<<name;
-    rev(name);
-    cout<<name;
+    // // cout<<len(name);
+    // // name[4]='\0';
+    // // cout<<"your name is "<<name;
+    // rev(name);
+    // cout<<name;
+    char arr[] = "anmol sharma\0";
+    string name = "anmol sharma\0";
+    cout<<arr<<endl;
+        cout<<name<<endl;}
 
 
-}
