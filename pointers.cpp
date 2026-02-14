@@ -47,7 +47,7 @@ int main (){
      pointer k =&oo;
      cout<<*k<<endl;
      pointer* kk= &k;
-     cout<<*kk<<endl;;
+     cout<<*kk<<endl;
      func1(k);
      cout<<*k<<endl;
      cout<<k;
