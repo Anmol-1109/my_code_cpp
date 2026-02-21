@@ -57,13 +57,11 @@ void merge(int arr[],int low, int mid ,int high){
     int j=mid+1;
     vector<int>v;
     while(i<=mid&&j<=high){
-        int temp=arr[i];
         if(arr[i]<arr[j]){
            v.emplace_back(arr[i++]);
         }
         else{
-            v.emplace_back(arr[j]);
-            j++;
+            v.emplace_back(arr[j++]);
         }
 
     }
@@ -87,11 +85,32 @@ void mergesort(int arr[],int low,int high){//devide and merge
     merge(arr,low,mid,high);
 
 }
+void quicksort(int arr[],int low,int high){
+    if(low>=high)return;
+    int pivot =arr[low];
+    int i= low+1;
+    int j=high;
+    while(i<=j){
+        if(i,high&&arr[i]<=pivot){
+            i++;
+        }
+        if(arr[j]>pivot){
+            j--;
+
+        }
+        if((arr[i]>pivot)&&(arr[j]<=pivot)&&i<j){
+            swap(arr[i],arr[j]);
+        }
+    }
+    swap(arr[low],arr[j]);
+    quicksort(arr,low,j-1);
+    quicksort(arr,j+1,high);
+}
 int main(){
    int  arr[]={2,6,4,5,6,87,98,5,5,0};
     int n= sizeof(arr)/sizeof(int);
     print(arr,n);
-   mergesort(arr,0,n-1);
+   quicksort(arr,0,n-1);
    print(arr,n);
 
 }
