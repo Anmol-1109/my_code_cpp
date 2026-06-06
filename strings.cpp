@@ -32,5 +32,5 @@ int main(){
     string name = "anmol sharma\0";
     cout<<arr<<endl;
         cout<<name<<endl;}
-https://chatgpt.com/share/6a2476ef-017c-83e9-830d-bcb37368ff53
+//https://chatgpt.com/share/6a2476ef-017c-83e9-830d-bcb37368ff53
 
