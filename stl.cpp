@@ -229,26 +229,49 @@ int main(){
 
 //map
 
-map<int,string>m;
-m[1]="anmol";
-m[2]="sharma";
-m[6]="from";
-m[18]="meerut";
-m.insert({5,"(021)"});
-for(auto i :m){
-    cout<<i.first<<" " <<i.second<<endl;
+// map<int,string>m;
+// m[1]="anmol";
+// m[2]="sharma";
+// m[6]="from";
+// m[18]="meerut";
+// m.insert({5,"(021)"});
+// for(auto i :m){
+//     cout<<i.first<<" " <<i.second<<endl;
+// }
+// cout<<"is there 18   "<<m.count(18);
+// cout<<"before erase"<<endl;
+// for(auto i :m){
+//     cout<<i.first<<" " <<i.second<<endl;
+// }
+// m.erase(5);
+// cout<<"after erase"<<endl;
+// for(auto i :m){
+//     cout<<i.first<<" " <<i.second<<endl;
+// }
+// auto it =m.find(6);
+// cout<<(*it).first<<(*it).second;
+
+
+
+
+
+
+
+    stack<int> st;
+
+    st.push(5);
+    st.push(10);
+    st.push(15);
+
+    cout << st.top() << endl;  // 15
+
+    st.pop();
+
+    cout << st.top() << endl;  // 10
+
+    cout << st.size() << endl; // 2
+
+    cout << st.empty() << endl; // 0
 }
-cout<<"is there 18   "<<m.count(18);
-cout<<"before erase"<<endl;
-for(auto i :m){
-    cout<<i.first<<" " <<i.second<<endl;
-}
-m.erase(5);
-cout<<"after erase"<<endl;
-for(auto i :m){
-    cout<<i.first<<" " <<i.second<<endl;
-}
-auto it =m.find(6);
-cout<<(*it).first<<(*it).second;
-}
+
 
