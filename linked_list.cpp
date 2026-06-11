@@ -63,4 +63,25 @@ int main(){
         a=a->next;
     }
 
+
+
+
+
+    //insertion after 
+    int insert=4;
+    int insertval=5;
+    head=start;
+    while(head->data!=insert)head=head->next;
+    if(head->data==insert){node* temp=head->next;
+    head->next=new node(insertval,temp);}
+     cout<<"\nafter insertion\n";
+    a=start;
+    while(a!=NULL){
+        cout<<a->data<<" ";
+        a=a->next;
+    }
+
+
+
+
 }
