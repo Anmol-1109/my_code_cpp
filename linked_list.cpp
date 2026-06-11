@@ -12,5 +12,12 @@ struct node{
 int main(){
     node a=node(3,NULL);
     node*b=&a;
-    cout<<b;
+    node*c=new node(5,b);
+    cout<<b<<endl;
+    cout<<b->data<<endl;
+    cout<<b->next;
+    cout<<c<<endl;
+    cout<<c->data<<endl;
+    cout<<c->next->data<<endl;
+
 }
