@@ -1,4 +1,4 @@
-# include <bits/stdc++.h>;
+# include <bits/stdc++.h>
 using namespace std;
 struct node{//you may use class in place of struct it will still work the class is better to use in some places as it gives the benefits of oops
     int data;
@@ -44,5 +44,23 @@ int main(){
         a=a->next;
     }
 
+    //deletion
+    int del=5;
+    node*head=start;
+    while(head->next){
+        if(head->next->data==del){
+            node* temp=head->next;
+            head->next=head->next->next;
+            delete temp;
+            break;
+        }
+        head= head->next;
+    }
+    cout<<"\nafter deletion\n";
+    a=start;
+    while(a!=NULL){
+        cout<<a->data<<" ";
+        a=a->next;
+    }
 
 }
