@@ -153,4 +153,27 @@ int main(){
     cout<<temp->data;
      
 
+
+
+
+
+    //insertion
+
+    int after =5;
+    int value=6;
+    temp= start;
+    while(temp->data!=after){
+        temp=temp->next;
+}
+    temp->next= new dnode(temp,value,temp->next);
+    temp->next->next->prev=temp->next;
+
+     cout<<"\nafter insertion\n";
+     temp=start;
+     while(temp->next){
+        cout<<temp->data<<" ";
+        temp=temp->next;
+    }
+    cout<<temp->data;
+     
 }
