@@ -116,9 +116,15 @@ int main(){
         temp=temp->next;
     }
     temp= start;
-    while(temp){
+    while(temp->next){
         cout<<temp->data<<" ";
         temp=temp->next;
+    }
+    cout<<temp->data;
+    cout<<endl;
+    while(temp){
+        cout<<temp->data<<" ";
+        temp=temp->prev;
     }
     cout<<endl;
 
