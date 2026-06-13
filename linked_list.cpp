@@ -10,7 +10,7 @@ struct node{//you may use class in place of struct it will still work the class 
     }
     node(int data2){
         data = data2;
-        next =NULL;
+        next =nullptr;
     }
 };
 struct dnode{
@@ -24,12 +24,12 @@ struct dnode{
     }
     dnode(int data1){
         data= data1;
-        prev=NULL;
-        next=NULL;
+        prev=nullptr;
+        next=nullptr;
     }
 };
 int main(){
-    // node a=node(3,NULL);
+    // node a=node(3,nullptr);
     // node*b=&a;
     // node*c=new node(5,b);
     // cout<<b<<endl;
@@ -54,7 +54,7 @@ int main(){
     // }
     // node* a;
     // a=start;
-    // while(a!=NULL){
+    // while(a!=nullptr){
     //     cout<<a->data<<" ";
     //     a=a->next;
     // }
@@ -73,7 +73,7 @@ int main(){
     // }
     // cout<<"\nafter deletion\n";
     // a=start;
-    // while(a!=NULL){
+    // while(a!=nullptr){
     //     cout<<a->data<<" ";
     //     a=a->next;
     // }
@@ -91,7 +91,7 @@ int main(){
     // head->next=new node(insertval,temp);}
     //  cout<<"\nafter insertion\n";
     // a=start;
-    // while(a!=NULL){
+    // while(a!=nullptr){
     //     cout<<a->data<<" ";
     //     a=a->next;
     // }
@@ -112,7 +112,7 @@ int main(){
     dnode* start= new dnode(arr[0]);
     dnode* temp=start;
     for(int i=1;i<6;i++){
-        temp->next=new dnode(temp,arr[i],NULL);
+        temp->next=new dnode(temp,arr[i],nullptr);
         temp=temp->next;
     }
     temp= start;
@@ -121,11 +121,36 @@ int main(){
         temp=temp->next;
     }
     cout<<temp->data;
-    cout<<endl;
-    while(temp){
+    // cout<<endl;
+    // while(temp){
+    //     cout<<temp->data<<" ";
+    //     temp=temp->prev;
+    // }
+    // cout<<endl;
+
+
+
+
+
+    //deletion
+    int delvalue=6;
+     temp=start;
+     while(temp){
+        if(temp->data==delvalue){
+        temp->prev->next=temp->next;
+        temp->next->prev=temp->prev;
+        delete temp;
+        break;}
+        else temp=temp->next;
+
+     }
+     cout<<"\nafter deletion\n";
+     temp=start;
+     while(temp->next){
         cout<<temp->data<<" ";
-        temp=temp->prev;
+        temp=temp->next;
     }
-    cout<<endl;
+    cout<<temp->data;
+     
 
 }
