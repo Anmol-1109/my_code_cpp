@@ -5,6 +5,11 @@ int  fibo(int n){
     return fibo(n-1)+fibo(n-2);
 
 }
+int sum(int n){
+    if(n==0)return 0;
+    else return n+sum(n-1);
+}
 int main(){
-    cout<<fibo(6);
+    //cout<<fibo(6);
+    cout<<sum(3);
 }
