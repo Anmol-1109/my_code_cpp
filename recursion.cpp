@@ -11,10 +11,11 @@ void print(vector<int>v){
 }
 void printsub(int arr[],int i,vector<int>&v,int size){
     if(i==size){print(v);return ;}
-printsub(arr,i+1,v,size);
+
 v.push_back(arr[i]);
 printsub(arr,i+1,v,size);
 v.pop_back();
+printsub(arr,i+1,v,size);
 
 }
 int sum(int n){
