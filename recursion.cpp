@@ -22,23 +22,11 @@ int sum(int n){
     if(n==0)return 0;
     else return n+sum(n-1);
 }
-int subseqk(int arr[],int size,vector<int>&v,int n,int sum,int i){
-    if(i==size)return sum;
-    if(sum==n)print(v);
-    sum=sum+=arr[i];
-    v.push_back(arr[i]);
-    sum=subseqk(arr,size,v,n,sum,i+1);
-    sum-=arr[i];
-    v.pop_back();
-    sum=subseqk(arr,size,v,n,sum,i+1);
-    return sum;
-}
 int main(){
     //cout<<fibo(6);
     //cout<<sum(3);
-    int arr[]={1,2,3,6,7,8,9};
-    int size=sizeof(arr)/sizeof(int);
+    int arr[]={1,2,3};
     vector<int>v;
-    subseqk(arr,size,v,15,0,0);
+    printsub(arr,0,v,3);
 
 }
